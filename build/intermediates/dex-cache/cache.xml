@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Luck\Documents\_Tareas\Moviles\TiD\TidPrueba\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\Luck\Documents\_Tareas\Moviles\TiD\TidPrueba\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-2516f0d233683a6ed067eba71fa6157644511499.jar" />
+    </item>
+    <item
+        jar="C:\Users\Luck\Documents\_Tareas\Moviles\TiD\TidPrueba\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\Luck\Documents\_Tareas\Moviles\TiD\TidPrueba\app\build\intermediates\pre-dexed\debug\classes-13e1e67846ae477356d827c9b5cf3c7f0efae0c1.jar" />
+    </item>
+    <item
+        jar="C:\Users\Luck\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\Luck\Documents\_Tareas\Moviles\TiD\TidPrueba\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-aedfbb54d112cbd36e767e2c2c99c0d9262f2e28.jar" />
+    </item>
+    <item
+        jar="C:\Users\Luck\Documents\_Tareas\Moviles\TiD\TidPrueba\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="C:\Users\Luck\Documents\_Tareas\Moviles\TiD\TidPrueba\app\build\intermediates\pre-dexed\debug\classes-7c7dd6fc8f728e347e87fcf5be0e373732e0beef.jar" />
+    </item>
+    <item
+        jar="C:\Users\Luck\Documents\_Tareas\Moviles\TiD\TidPrueba\mpandroidchartlibrary-1-7-4\mpandroidchartlibrary-1-7-4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c685e45ac6491e51640ce3571606ac22dfd4a6a3">
+        <dex dex="C:\Users\Luck\Documents\_Tareas\Moviles\TiD\TidPrueba\app\build\intermediates\pre-dexed\debug\mpandroidchartlibrary-1-7-4-9fbb6f7a89c2fa2373a053b560af9cbdfe8843e6.jar" />
+    </item>
+
+</items>

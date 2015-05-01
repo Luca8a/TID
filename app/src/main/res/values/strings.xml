@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TiD</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="augmented_fragment_string">Augmented Fragment</string>
+    <string name="facebook_fragment_string">FaceBook</string>
+    <string name="New_Text">Nuevo Texto</string>
+
+    <string name="abrir">Abrir Drawer </string>
+    <string name="cerrar">Cerrar Drawer </string>
+    <string name="HistDent">
+        <![CDATA[
+            Historial\n
+            Dental
+        ]]>
+    </string>
+    <string name="recorda">Recordatorios</string>
+    <string name="headerInicio">Clínica Dental Familiar</string>
+    <string name="tipLabel">Tip del Día :</string>
+    <string name="descarga">Consultando historial dental...</string>
+    <string name="agregar"><u>Agregar:</u></string>
+    <string name="evento">Evento</string>
+    <string name="fecha">Fecha</string>
+    <string name="actualizar">Actualizando historial dental...</string>
+
+    <string-array name="opciones">
+        <item> Inicio </item>
+        <item> Historial Dental </item>
+        <item> Recordatorios </item>
+        <item> Pagos </item>
+        <item> Juego para TiD </item>
+        <item> Marcas Recomendadas </item>
+        <item> Mi Dentista </item>
+        <item> Acerda de </item>
+    </string-array>
+
+
+</resources>

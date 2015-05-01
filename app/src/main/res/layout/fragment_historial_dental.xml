@@ -1,0 +1,128 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.itesm.edu.tidprueba.HistorialDentalFragment"
+    android:columnCount="2"
+    android:rowCount="5"
+    android:background="@color/background">
+
+
+    <ImageView
+        android:layout_width="88dp"
+        android:layout_height="90dp"
+        android:id="@+id/imageView6"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:src="@drawable/hist_dent_icono"
+        android:layout_gravity="right" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/HistDent"
+        android:id="@+id/textView2"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_gravity="center"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="#ffffffff" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:background="#ff022a38"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/agregar"
+        android:id="@+id/textView11"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:textSize="30dp"
+        android:layout_gravity="left|center_vertical"
+        android:textColor="#ffff7121" />
+
+    <ImageButton
+        android:layout_width="63dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageButton"
+        android:layout_column="1"
+        android:layout_row="2"
+        android:src="@drawable/boton_mas"
+        android:layout_gravity="center_vertical|end"
+        android:scaleType="fitXY"
+        android:onClick="nuevoRegistro" />
+
+
+    <GridLayout
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_width="match_parent"
+        android:columnCount="5"
+        android:rowCount="1"
+        android:layout_columnSpan="2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/textSeparator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Evento"
+                android:textAllCaps="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_gravity="fill_horizontal|center_horizontal" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/textSeparator2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Fecha"
+                android:textAllCaps="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_gravity="fill_horizontal|center_horizontal" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        </GridLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:layout_columnSpan="2"
+        android:textColor="#ffffffff" />
+
+
+</GridLayout>
