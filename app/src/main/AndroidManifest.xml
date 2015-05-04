@@ -28,6 +28,8 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateVisible|adjustPan"
         />
+        <receiver android:name=".AlarmReceiver" android:process=":remote" />
+
 
     </application>
 

@@ -1,0 +1,75 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="mx.itesm.edu.tidprueba.marcas_rec"
+android:columnCount="2"
+android:rowCount="9"
+android:background="@color/background">
+
+
+<ImageView
+    android:layout_width="88dp"
+    android:layout_height="90dp"
+    android:id="@+id/imageView6"
+    android:layout_row="0"
+    android:layout_column="0"
+    android:src="@drawable/ic_action_marc"
+    android:layout_gravity="right" />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="@string/MarcRec"
+    android:id="@+id/textView2"
+    android:layout_row="0"
+    android:layout_column="1"
+    android:layout_gravity="center"
+    android:textSize="35dp"
+    android:textStyle="bold"
+    android:textColor="#ffffffff" />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_row="1"
+    android:layout_column="0"
+    android:layout_columnSpan="2"
+    android:background="#ff022a38"
+    />
+
+    <Space
+        android:layout_width="40px"
+        android:layout_height="40px"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:layout_columnSpan="2" />
+
+    <ImageView
+        android:layout_width="342dp"
+        android:layout_height="168dp"
+        android:id="@+id/imageView8"
+        android:layout_row="6"
+        android:layout_column="0"
+        android:src="@drawable/hammer"
+        android:layout_columnSpan="2" />
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView7"
+        android:layout_column="0"
+        android:src="@drawable/zimmer"
+        android:layout_columnSpan="2"
+        android:layout_row="7" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView5"
+        android:layout_row="8"
+        android:layout_column="0"
+        android:src="@drawable/sensodyne"
+        android:layout_columnSpan="2" />
+
+
+</GridLayout>

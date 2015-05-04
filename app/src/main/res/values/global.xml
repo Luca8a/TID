@@ -2,5 +2,5 @@
 <resources>
     <color name="background">#00CCFF</color>
     <color name="white">#FFF</color>
-    <string name="URL">http://10.48.216.53:3000/</string>
+    <string name="URL">http://192.168.1.219:3000/</string>
 </resources>

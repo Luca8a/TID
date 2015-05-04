@@ -18,12 +18,36 @@
             Dental
         ]]>
     </string>
+        <string name="Pagos">
+        <![CDATA[
+            Pagos\n
+            Realizados
+        ]]>
+        </string>
+        <string name="MarcRec">
+        <![CDATA[
+            Marcas\n
+            Recomendadas
+        ]]>
+    </string>
+       <string name="AcercaDe">
+        <![CDATA[
+            Acerca de
+        ]]>
+    </string>
+        <string name="MiDent">
+        <![CDATA[
+            Mi Dentista
+        ]]>
+    </string>
     <string name="recorda">Recordatorios</string>
     <string name="headerInicio">Clínica Dental Familiar</string>
     <string name="tipLabel">Tip del Día :</string>
     <string name="descarga">Consultando historial dental...</string>
     <string name="agregar"><u>Agregar:</u></string>
     <string name="evento">Evento</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="descripcion">Descripcion</string>
     <string name="fecha">Fecha</string>
     <string name="actualizar">Actualizando historial dental...</string>
 
@@ -35,8 +59,8 @@
         <item> Juego para TiD </item>
         <item> Marcas Recomendadas </item>
         <item> Mi Dentista </item>
-        <item> Acerda de </item>
+        <item> Acerca de </item>
     </string-array>
-
+    <string name="errorRecordatorio">Error al configurar el recordatorio</string>
 
 </resources>

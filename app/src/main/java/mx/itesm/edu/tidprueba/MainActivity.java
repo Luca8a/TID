@@ -15,6 +15,8 @@ import android.widget.ListView;
 import android.app.Fragment;
 
 
+
+
 public class MainActivity extends ActionBarActivity {
 
     private String[] itemsTitulos;
@@ -36,13 +38,13 @@ public class MainActivity extends ActionBarActivity {
 
         Objeto[] opciones = new Objeto[8];
         opciones[0] = new Objeto(R.drawable.ic_launcher, itemsTitulos[0]);
-        opciones[1] = new Objeto(R.drawable.ic_action_hd,itemsTitulos[1]);
-        opciones[2] = new Objeto(R.drawable.ic_action_rec, itemsTitulos[2]);
-        opciones[3] = new Objeto(R.drawable.ic_action_dentista, itemsTitulos[3]);
-        opciones[4] = new Objeto(R.drawable.ic_launcher, itemsTitulos[4]);
-        opciones[5] = new Objeto(R.drawable.ic_launcher, itemsTitulos[5]);
-        opciones[6] = new Objeto(R.drawable.ic_launcher, itemsTitulos[6]);
-        opciones[7] = new Objeto(R.drawable.ic_launcher, itemsTitulos[7]);
+        opciones[1] = new Objeto(R.drawable.ic_action_hd_web,itemsTitulos[1]);
+        opciones[2] = new Objeto(R.drawable.ic_action_rec_web, itemsTitulos[2]);
+        opciones[3] = new Objeto(R.drawable.ic_action_dentista_web, itemsTitulos[3]);
+        opciones[4] = new Objeto(R.drawable.ic_action_juego, itemsTitulos[4]);
+        opciones[5] = new Objeto(R.drawable.ic_action_marc, itemsTitulos[5]);
+        opciones[6] = new Objeto(R.drawable.ic_action_mident, itemsTitulos[6]);
+        opciones[7] = new Objeto(R.drawable.ic_action_aboutus, itemsTitulos[7]);
 
         DrawerAdaptor adaptador = new DrawerAdaptor(this, R.layout.renglon, opciones);
         listViewDrawer.setAdapter(adaptador);
@@ -107,12 +109,14 @@ public class MainActivity extends ActionBarActivity {
                 break;
             case 3:
                 //TODO: PAGOS
+                fragment = new Pagos();
                 break;
             case 4:
                 //TODO: JUEGO TID
                 break;
             case 5:
                 //TODO: Marcas Reconocidas
+                fragment= new MarcasRecomendadas();
                 break;
             case 6:
                 fragment= new Dentista();
@@ -140,6 +144,10 @@ public class MainActivity extends ActionBarActivity {
     public void nuevoRegistro(View v){
         FragmentManager fragmentManager = getFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.content_frame,new AgregarEvento()).commit();
+    }
+    public void nuevoPago(View v){
+        FragmentManager fragmentManager = getFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.content_frame,new AgregarPago()).commit();
     }
 
 

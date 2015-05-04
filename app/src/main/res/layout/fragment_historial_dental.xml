@@ -65,7 +65,8 @@
         android:layout_width="match_parent"
         android:columnCount="5"
         android:rowCount="1"
-        android:layout_columnSpan="2">
+        android:layout_columnSpan="2"
+        android:layout_height="wrap_content">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -80,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="8dp"
-                android:text="Evento"
+                android:text="Eventos"
                 android:textAllCaps="true"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="#FFF"
@@ -91,23 +92,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"/>
-            <TextView
-                android:id="@+id/textSeparator2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="8dp"
-                android:text="Fecha"
-                android:textAllCaps="true"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="#FFF"
-                android:textStyle="bold"
-                android:visibility="visible"
-                android:layout_gravity="fill_horizontal|center_horizontal" />
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"/>
+
         </LinearLayout>
 
         </GridLayout>
@@ -122,7 +107,8 @@
         android:focusableInTouchMode="false"
         android:clickable="false"
         android:layout_columnSpan="2"
-        android:textColor="#ffffffff" />
+        android:textColor="#ffffffff"
+        android:layout_marginBottom="250dp" />
 
 
 </GridLayout>

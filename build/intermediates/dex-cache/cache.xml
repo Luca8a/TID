@@ -23,6 +23,34 @@
         <dex dex="C:\Users\Luck\Documents\_Tareas\Moviles\TiD\TidPrueba\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-aedfbb54d112cbd36e767e2c2c99c0d9262f2e28.jar" />
     </item>
     <item
+        jar="C:\Users\Luck\Documents\_Tareas\Moviles\TiD\TidPrueba\mpandroidchartlibrary-1-7-4\mpandroidchartlibrary-1-7-4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c685e45ac6491e51640ce3571606ac22dfd4a6a3">
+        <dex dex="C:\Users\Luck\Documents\_Tareas\Moviles\TiD\TidPrueba\app\build\intermediates\pre-dexed\debug\mpandroidchartlibrary-1-7-4-9fbb6f7a89c2fa2373a053b560af9cbdfe8843e6.jar" />
+    </item>
+    <item
+        jar="C:\Users\Luck\Documents\_Tareas\Moviles\TiD\Tid\mpandroidchartlibrary-1-7-4\mpandroidchartlibrary-1-7-4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c685e45ac6491e51640ce3571606ac22dfd4a6a3">
+        <dex dex="C:\Users\Luck\Documents\_Tareas\Moviles\TiD\Tid\app\build\intermediates\pre-dexed\debug\mpandroidchartlibrary-1-7-4-09cff8872de33d468e57e26d56b22a0b8ae3f91a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Luck\Documents\_Tareas\Moviles\TiD\Tid\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="C:\Users\Luck\Documents\_Tareas\Moviles\TiD\Tid\app\build\intermediates\pre-dexed\debug\classes-4252e9eab9a2b79433f659953d420862ee78f6d0.jar" />
+    </item>
+    <item
+        jar="C:\Users\Luck\Documents\_Tareas\Moviles\TiD\Tid\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\Luck\Documents\_Tareas\Moviles\TiD\Tid\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-77d2716dd7004b5e8608986d41168deaa8046637.jar" />
+    </item>
+    <item
         jar="C:\Users\Luck\Documents\_Tareas\Moviles\TiD\TidPrueba\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -30,11 +58,11 @@
         <dex dex="C:\Users\Luck\Documents\_Tareas\Moviles\TiD\TidPrueba\app\build\intermediates\pre-dexed\debug\classes-7c7dd6fc8f728e347e87fcf5be0e373732e0beef.jar" />
     </item>
     <item
-        jar="C:\Users\Luck\Documents\_Tareas\Moviles\TiD\TidPrueba\mpandroidchartlibrary-1-7-4\mpandroidchartlibrary-1-7-4.jar"
+        jar="C:\Users\Luck\Documents\_Tareas\Moviles\TiD\Tid\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="c685e45ac6491e51640ce3571606ac22dfd4a6a3">
-        <dex dex="C:\Users\Luck\Documents\_Tareas\Moviles\TiD\TidPrueba\app\build\intermediates\pre-dexed\debug\mpandroidchartlibrary-1-7-4-9fbb6f7a89c2fa2373a053b560af9cbdfe8843e6.jar" />
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\Luck\Documents\_Tareas\Moviles\TiD\Tid\app\build\intermediates\pre-dexed\debug\classes-d8b499a51bdfd3336a90c4703e85cae5c4f893b9.jar" />
     </item>
 
 </items>

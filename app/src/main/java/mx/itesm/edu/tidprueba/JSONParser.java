@@ -25,7 +25,7 @@ public class JSONParser {
     public JSONParser(){
 
     }
-    public JSONObject getJSONFromUrl(String url){
+    public JSONObject getJSONFromUrl(String url,String db){
         //Making HTTP request
         try{
             //default HTTP Client
@@ -51,7 +51,7 @@ public class JSONParser {
             }
             is.close();
             json = sb.toString();
-            json ="{\"eventos\":"+json+"}";
+            json ="{\""+db+"\":"+json+"}";
             Log.w("JSON",json);
         } catch (Exception e) {
             Log.e("Buffer Error", "Error converting result " + e.toString());

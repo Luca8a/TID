@@ -14,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -27,61 +28,39 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.util.Calendar;
 import java.util.UUID;
 
 
 public class AgregarEvento extends Fragment implements View.OnClickListener {
     EditText evento;
-    EditText fecha;
+    DatePicker pickerDate;
     private static String url = "";
-    public static String getUniquePsuedoID() {
-        // If all else fails, if the user does have lower than API 9 (lower
-        // than Gingerbread), has reset their device or 'Secure.ANDROID_ID'
-        // returns 'null', then simply the ID returned will be solely based
-        // off their Android device information. This is where the collisions
-        // can happen.
-        // Thanks http://www.pocketmagic.net/?p=1662!
-        // Try not to use DISPLAY, HOST or ID - these items could change.
-        // If there are collisions, there will be overlapping data
-        String m_szDevIDShort = "35" + (Build.BOARD.length() % 10) + (Build.BRAND.length() % 10) + (Build.CPU_ABI.length() % 10) + (Build.DEVICE.length() % 10) + (Build.MANUFACTURER.length() % 10) + (Build.MODEL.length() % 10) + (Build.PRODUCT.length() % 10);
 
-        // Thanks to @Roman SL!
-        // http://stackoverflow.com/a/4789483/950427
-        // Only devices with API >= 9 have android.os.Build.SERIAL
-        // http://developer.android.com/reference/android/os/Build.html#SERIAL
-        // If a user upgrades software or roots their device, there will be a duplicate entry
-        String serial = null;
-        try {
-            serial = android.os.Build.class.getField("SERIAL").get(null).toString();
-
-            // Go ahead and return the serial for api => 9
-            return new UUID(m_szDevIDShort.hashCode(), serial.hashCode()).toString();
-        } catch (Exception exception) {
-            // String needs to be initialized
-            serial = "serial"; // some value
-        }
-
-        // Thanks @Joe!
-        // http://stackoverflow.com/a/2853253/950427
-        // Finally, combine the values we have found by using the UUID class to create a unique identifier
-        return new UUID(m_szDevIDShort.hashCode(), serial.hashCode()).toString();
-    }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
         View v = inflater.inflate(R.layout.fragment_agregar_evento, container, false);
+        pickerDate = (DatePicker)v.findViewById(R.id.datePicker);
+        Calendar now = Calendar.getInstance();
+        pickerDate.init(
+                now.get(Calendar.YEAR),
+                now.get(Calendar.MONTH),
+                now.get(Calendar.DAY_OF_MONTH),
+                null);
 
        ImageButton b = (ImageButton) v.findViewById(R.id.buttonGuardar);
         b.setOnClickListener(this);
         evento= (EditText) v.findViewById(R.id.editText);
-        fecha = (EditText) v.findViewById(R.id.editText2);
+
         url=getString(R.string.URL);
 
-        String id=getUniquePsuedoID();
+        String id=DevicePsuedoID.getUniquePsuedoID();
         id= id.replace("-","");
         url+=id;
+        url+="/Eventos";
         Log.w("LOG", "URL: " + url);
         return v;
     }
@@ -92,7 +71,8 @@ public class AgregarEvento extends Fragment implements View.OnClickListener {
         switch (v.getId()){
             case R.id.buttonGuardar:
 
-                json="{\"evento\":\""+evento.getText().toString()+"\",\"fecha\":\""+fecha.getText().toString()+"\"}";
+                json="{\"evento\":\""+evento.getText().toString()+"\",\"fecha\":\""
+                        +pickerDate.getYear()+"/"+pickerDate.getMonth()+"/"+pickerDate.getDayOfMonth()+"\"}";
                 Log.w("JSON",json);
                 (new AddToDatabase()).execute();
                 break;
@@ -112,7 +92,7 @@ public class AgregarEvento extends Fragment implements View.OnClickListener {
         protected Boolean doInBackground(String... args) {
 
 
-           //"{\"Evento\":\"sacaron diente\",\"Fecha\":\"25/08/45\"}"
+            //"{\"Evento\":\"sacaron diente\",\"Fecha\":\"25/08/45\"}"
             // Getting JSON from URL
 
             DefaultHttpClient httpClient = new DefaultHttpClient();
