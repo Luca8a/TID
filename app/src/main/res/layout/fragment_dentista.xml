@@ -3,7 +3,7 @@
     android:layout_height="match_parent"
     tools:context="mx.itesm.edu.tidprueba.Dentista"
     android:columnCount="2"
-    android:rowCount="20"
+    android:rowCount="36"
     android:background="@color/background">
 
 
@@ -55,7 +55,7 @@
         android:layout_column="0"
         android:layout_columnSpan="2"
         android:textColor="#ffffffff"
-        android:textSize="30dp" />
+        android:textSize="25dp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -78,7 +78,7 @@
         android:layout_row="11"
         android:layout_column="0"
         android:layout_columnSpan="2"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:textColor="#ffffffff" />
 
     <TextView
@@ -101,7 +101,7 @@
         android:layout_row="14"
         android:layout_column="0"
         android:layout_columnSpan="2"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:textColor="#ffffffff" />
 
     <TextView
@@ -115,6 +115,13 @@
         android:layout_columnSpan="2"
         android:textSize="20dp" />
 
+    <ImageButton
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:id="@+id/imageButton3"
+        android:layout_row="20"
+        android:layout_column="1"
+        android:src="@drawable/mips" />
 
 
 </GridLayout>

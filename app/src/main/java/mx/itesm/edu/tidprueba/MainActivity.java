@@ -145,7 +145,7 @@ public class MainActivity extends ActionBarActivity {
         FragmentManager fragmentManager = getFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.content_frame,new AgregarEvento()).commit();
     }
-    public void nuevoPago(View v){
+	    public void nuevoPago(View v){
         FragmentManager fragmentManager = getFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.content_frame,new AgregarPago()).commit();
     }

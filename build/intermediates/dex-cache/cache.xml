@@ -23,6 +23,13 @@
         <dex dex="C:\Users\Luck\Documents\_Tareas\Moviles\TiD\TidPrueba\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-aedfbb54d112cbd36e767e2c2c99c0d9262f2e28.jar" />
     </item>
     <item
+        jar="C:\Users\Luck\Documents\_Tareas\Moviles\TiD\Tid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.5.87\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="C:\Users\Luck\Documents\_Tareas\Moviles\TiD\Tid\app\build\intermediates\pre-dexed\debug\classes-c6636d2c66016deec75c3c7f6145bf0e91b9dcfc.jar" />
+    </item>
+    <item
         jar="C:\Users\Luck\Documents\_Tareas\Moviles\TiD\TidPrueba\mpandroidchartlibrary-1-7-4\mpandroidchartlibrary-1-7-4.jar"
         jumboMode="false"
         revision="21.1.2"
