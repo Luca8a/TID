@@ -2,6 +2,7 @@ package mx.itesm.edu.tidprueba;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
@@ -113,7 +114,8 @@ public class MainActivity extends ActionBarActivity {
                 break;
             case 4:
                 //TODO: JUEGO TID
-                fragment = new Metaio();
+                Intent intent = new Intent(this, MetaioActivity.class);
+                startActivity(intent);
                 break;
             case 5:
                 //TODO: Marcas Reconocidas
