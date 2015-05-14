@@ -11,6 +11,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/metaioSDK" />
             <option value="$PROJECT_DIR$/mpandroidchartlibrary-1-7-4" />
           </set>
         </option>

@@ -113,6 +113,7 @@ public class MainActivity extends ActionBarActivity {
                 break;
             case 4:
                 //TODO: JUEGO TID
+                fragment = new Metaio();
                 break;
             case 5:
                 //TODO: Marcas Reconocidas

@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Tid.iml" filepath="$PROJECT_DIR$/Tid.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/metaioSDK/metaioSDK.iml" filepath="$PROJECT_DIR$/metaioSDK/metaioSDK.iml" />
       <module fileurl="file://$PROJECT_DIR$/mpandroidchartlibrary-1-7-4/mpandroidchartlibrary-1-7-4.iml" filepath="$PROJECT_DIR$/mpandroidchartlibrary-1-7-4/mpandroidchartlibrary-1-7-4.iml" />
     </modules>
   </component>
