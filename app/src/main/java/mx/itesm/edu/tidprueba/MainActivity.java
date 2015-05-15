@@ -37,15 +37,15 @@ public class MainActivity extends ActionBarActivity {
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
         listViewDrawer = (ListView)findViewById(R.id.left_drawer);
 
-        Objeto[] opciones = new Objeto[8];
+        Objeto[] opciones = new Objeto[7];
         opciones[0] = new Objeto(R.drawable.ic_launcher, itemsTitulos[0]);
         opciones[1] = new Objeto(R.drawable.ic_action_hd_web,itemsTitulos[1]);
         opciones[2] = new Objeto(R.drawable.ic_action_rec_web, itemsTitulos[2]);
         opciones[3] = new Objeto(R.drawable.ic_action_dentista_web, itemsTitulos[3]);
-        opciones[4] = new Objeto(R.drawable.ic_action_juego, itemsTitulos[4]);
-        opciones[5] = new Objeto(R.drawable.ic_action_marc, itemsTitulos[5]);
-        opciones[6] = new Objeto(R.drawable.ic_action_mident, itemsTitulos[6]);
-        opciones[7] = new Objeto(R.drawable.ic_action_aboutus, itemsTitulos[7]);
+        //opciones[4] = new Objeto(R.drawable.ic_action_juego, itemsTitulos[4]);
+        opciones[4] = new Objeto(R.drawable.ic_action_marc, itemsTitulos[5]);
+        opciones[5] = new Objeto(R.drawable.ic_action_mident, itemsTitulos[6]);
+        opciones[6] = new Objeto(R.drawable.ic_action_aboutus, itemsTitulos[7]);
 
         DrawerAdaptor adaptador = new DrawerAdaptor(this, R.layout.renglon, opciones);
         listViewDrawer.setAdapter(adaptador);
@@ -109,22 +109,20 @@ public class MainActivity extends ActionBarActivity {
                 fragment= new Recordatorios();
                 break;
             case 3:
-                //TODO: PAGOS
                 fragment = new Pagos();
                 break;
             case 4:
-                //TODO: JUEGO TID
-                Intent intent = new Intent(this, MetaioActivity.class);
-                startActivity(intent);
-                break;
-            case 5:
-                //TODO: Marcas Reconocidas
+                //Fuera Del Alcance: JUEGO TID
+  //              Intent intent = new Intent(this, MetaioActivity.class);
+//                startActivity(intent);
+
+
                 fragment= new MarcasRecomendadas();
                 break;
-            case 6:
+            case 5:
                 fragment= new Dentista();
                 break;
-            case 7:
+            case 6:
                 fragment= new About();
                 break;
         }
